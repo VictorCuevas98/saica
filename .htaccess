@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?dev.finanzas.cdmx.gob.mx$
+RewriteCond %{REQUEST_URI} !^/reconstruccion_2020/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /reconstruccion_2020/public/$1
+RewriteCond %{HTTP_HOST} ^(www.)?dev.finanzas.cdmx.gob.mx$
+RewriteRule ^(/)?$ public [L]
+
+<FilesMatch "\.(env)$">
+	Order Allow,Deny
+	Deny from all
+</FilesMatch>

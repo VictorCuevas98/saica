@@ -1,0 +1,16 @@
+.cosas_peques {
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
+}
+.error-class {
+    color:#ff0000;
+}
+.valid_class {
+    color:#032d3a;
+}
+.error-class.ifErr {
+    border-color: red;
+}
